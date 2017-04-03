@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Masters</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+<nav class="nav ">
+    <div class="nav-center"> <a class="toggle-nav" href="#">&#9776;</a>
+        <div class="nav-mobile">
+
+            <ul class="left">
+                <a href="#home"><img src="img/icon/photoMaster.png" class="logo-img"></a>
+                <li class="btn-4Parent" ><a href="index.html" class="btn-4">Home</a></li>
+                <!--<li class="btn-4Parent"> <a href="#about" class="btn-4">Categories</a> </li>-->
+                <li class="btn-4Parent"><a href="pricing.html" class="btn-4">pricing</a></li>
+                <li class="btn-4Parent"><a href="become-a-maestro.html" class="btn-4">Become A Maestro</a></li>
+                <li class="btn-4Parent"> <a href="about-us.html" class="btn-4"> About Us</a> </li>
+                <li class="btn-4Parent"> <a href="contact-us.html" class="btn-4">get in touch</a> </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+
+
+    <!--tune contact-->
+    <div class="row final" >
+        <header>Get in touch</header>
+        <div class="large-6 columns second-footer">
+            <div class="row">
+                <div class="row">
+                    <div class="small-9 small-centered large-uncentered columns seniorJ">
+                        <p class="lastJ">
+                            <i class="fa fa-phone" aria-hidden="true"></i> 0722000000
+                            <br>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> maestro.photomasters.co
+                        </p>
+                        <p class="byeNow">
+                            <i class="fa fa-compass" aria-hidden="true"></i> Bihi towers
+                            <br> 13th Floor,
+                            <br> Nairobi, Kenya.
+                        </p>
+                        <p class="byeNow">
+                        <ul class="social">
+                            <li> <a href="https://www.facebook.com/Little.Nesh.Ngashky"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                            <li> <a href="https://github.com/meshnesh"><i class="fa fa-github-alt" aria-hidden="true"></i></a> </li>
+                            <li> <a href="https://www.facebook.com/Little.Nesh.Ngashky"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                            <li> <a href="https://plus.google.com/u/0/113943502736158863949"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li></ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--second footer-->
+        <div class="large-6 columns first-footer" >
+            <div class="column row" id="map">
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="row">
+            <div class="small-12 columns">
+                <p class="links">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </p>
+                <p class="copywrite">© PhotoMasters 2017</p>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+    function initMap(){
+        var loc = {lat: -1.282112, lng: 36.821802};
+        var map = new google.maps.Map(document.getElementById('map'),{
+            zoom: 20,
+            center: loc
+
+        });
+        var marker = new google.maps.Marker({
+            position: loc,
+            map:map
+        })
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgAYh5_72O_8pBKpY8RrqFDdEXtYDwWDU&callback=initMap">
+</script>
+</body>
+
+</html>

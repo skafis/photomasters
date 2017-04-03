@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Masters</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav ">
+    <div class="nav-center"> <a class="toggle-nav" href="#">&#9776;</a>
+        <div class="nav-mobile">
+            <ul class="left">
+                <a href="#home"><img src="img/icon/photoMaster.png" class="logo-img"></a>
+                <li class="btn-4Parent" ><a href="index.html" class="btn-4">Home</a></li>
+                <li class="btn-4Parent"> <a href="categories.html" class="btn-4">Categories</a> </li>
+                <li class="btn-4Parent"><a href="pricing.html" class="btn-4">pricing</a></li>
+                <li class="btn-4Parent"><a href="become-a-maestro.html" class="btn-4">Become A Maestro</a></li>
+                <li class="btn-4Parent"> <a href="about-us.html" class="btn-4"> About Us</a> </li>
+                <li class="btn-4Parent"> <a href="contact-us.html" class="btn-4">get in touch</a> </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="contact-page">
+<video class="video" src="img/bokeh2.mp4" autoplay loop></video>
+<div class="page-overlay"></div>
+<div class="row wide">
+  <div class="medium-6 columns">
+  <header>CONTACT</header>
+  <div class="row">
+    <div class="medium-6 small-12 columns">
+      <h4 class="location">Bihi towers</h4>
+      <p>13th Floor, <br>Nairobi Kenya</p>
+    </div>
+    <div class="medium-6 small-12 columns">
+      
+      <h4 class="email">robert@photomasters.co</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-6 small-12 columns">
+      <h4 class="phone">Tel 254738963751</h4>
+    </div>
+    <div class="medium-6 small-12 columns">
+      <div class="social">
+        <ul class="inline-list">
+          <li><a href="http://twitter.com/photomasterske"><i class="fi-social-twitter"></i></a></li>
+          <li><a href="http://facebook.com/photomasterske"><i class="fi-social-facebook"></i></a></li>
+          <li><a href="http://linkedin.com/photomasterske"><i class="fi-social-linkedin"></i></a></li>
+          <!-- <li><a href="#"><i class="fi-social-github"></i></a></li> -->
+        </ul>
+        <ul class="inline-list">
+          <!-- <li><a href="#"><i class="fi-social-pinterest"></i></a></li> -->
+          <li><a href="#"><i class="fi-social-youtube"></i></a></li>
+          <li><a href="http://instagram.com/photomasterske"><i class="fi-social-instagram"></i></a></li>
+          <li><a href="#"><i class="fi-social-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="medium-6 small-12 columns">
+  <div id="map">
+    
+  </div>
+</div>
+</div>
+</section>
+<section class="footer">
+        <div class="row wide">
+            <div class="small-12 columns">
+                <p class="links"> <a href="index.html">Home</a> <a href="categories.html">Categories</a> <a href="become-a-maestro.html">Become a Maestro</a> <a href="pricing.html">Pricing</a> <a href="about-us.html">About</a> <a href="contact-us.html">Get In Touch</a> </p>
+                <p class="copywrite">© PhotoMasters 2017</p>
+            </div>
+        </div>
+    </section>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+<script>
+function initMap(){
+var loc = {lat: -1.282112, lng: 36.821802};
+var map = new google.maps.Map(document.getElementById('map'),{
+zoom: 20,
+center: loc
+
+});
+var marker = new google.maps.Marker({
+position: loc,
+map:map
+})
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgAYh5_72O_8pBKpY8RrqFDdEXtYDwWDU&callback=initMap">
+</script>
+</body>
+</html>
